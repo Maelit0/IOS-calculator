@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="post-icon-1.png"></i>
+    <link rel="stylesheet" href="calc.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <table>
+                <tr>
+                    <div class="res">
+                        <td id="display" class="final">0</td>
+                    </div>
+                </tr>
+                <tr>
+                    <td><button id="limpar" class="ferramenta" onclick="limpar()">AC</td>
+                    <td><button id="maismenos" class="ferramenta" onclick="negativar()" > +/-</td>
+                    <td><button id="porcentagem" class="ferramenta" onclick="porcentar()">%</td>
+                    <td><button id="divisao" value="/" class="oper" onclick="sinal(event)">÷</td>
+                </tr>
+                <tr>
+                    <td><button id="sete" value="7" class=" botao numero" onclick="insert(event)">7</td>
+                    <td><button id="oito" value="8" class=" botao numero" onclick="insert(event)">8</td>
+                    <td><button id="nove" value="9" class=" botao numero" onclick="insert(event)">9</td>
+                    <td><button id="vezes" value="*" class="oper" onclick="sinal(event)">x</td>
+                </tr>
+                <tr>
+                    <td><button id="quatro" value="4" class=" botao numero" onclick="insert(event)">4</td>
+                    <td><button id="cinco" value="5" class=" botao numero" onclick="insert(event)">5</td>
+                    <td><button id="seis" value="6" class=" botao numero" onclick="insert(event)">6</td>
+                    <td><button id="menos" value="-" class="oper" onclick="sinal(event)">-</td>
+                </tr>
+                <tr>
+                    <td><button id="um" value="1" class=" botao numero" onclick="insert(event)">1</td>
+                    <td><button id="dois" value="2" class=" botao numero" onclick="insert(event)">2</td>
+                    <td><button id="tres" value="3" class=" botao numero" onclick="insert(event)">3</td>
+                    <td><button id="mais" value="+" class="oper" onclick="sinal(event)">+</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button value="0" id="zero" class="botao numero" style="width:130px"
+                            onclick="insert(event)">0</td>
+                    <td><button id="ponto" value="." class="botao" onclick="ponto()">.</td>
+                    <td><button id="igual" class="oper" onclick="igual(event)">=</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>

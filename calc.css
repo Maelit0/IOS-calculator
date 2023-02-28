@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+.fundo {
+    background-color: #C0C0C0;
+    text-align: center;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.botao {
+    background-color: #505050;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin: 3px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.calculadora {
+    display: flex;
+    text-align: end;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    height: 620px;
+    border-radius: 10px;
+}
+
+#display {
+    display: flex;
+    width: 30px;
+    height: 90px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 45px;
+    left: 220px;
+    font-size: 63px;
+}
+
+.oper {
+    background-color: #FF9500;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 30px;
+    margin: 3px;
+    cursor: pointer;
+    border: none;
+}
+
+.ferramenta {
+    background-color: #b3b3b3;
+    color: rgb(0, 0, 0);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 25px;
+    margin: 3px;
+    cursor: pointer;
+    border: none;
+}
+
+.ferramenta:active {
+    background-color: #f0ecec;
+}
+
+button:active {
+    background-color: #d6d6d6ee;
+}
+
+.oper:active {
+    background-color: #eeeee4;
+    color: #FF9500;
+}
+
+#zero {
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px 0px 0px 18px;
+    font-size: 35px;
+}
