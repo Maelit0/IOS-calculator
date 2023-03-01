@@ -56,13 +56,13 @@ function limpar() {
     clear.innerHTML = 'AC'
 }
 function igual() {
-    if (sinal1 == "+") {
+    if (sinal1 == "+" && sinal2 =="+") {
         resultadoFinal = parseFloat(valor1) + parseFloat(valor2) + parseFloat(valor3)
-    } if (sinal1 == "-") {
+    } if (sinal1 == "-" && sinal2 == "-" ) {
         resultadoFinal = parseFloat(valor1) - parseFloat(valor2) - parseFloat(valor3)
-    } if (sinal1 == "*") {
+    } if (sinal1 == "*" && sinal2 == "*") {
         resultadoFinal = parseFloat(valor1) * parseFloat(valor2) * parseFloat(valor3)
-    } if (sinal1 == "/") {
+    } if (sinal1 == "/" && sinal2 == "/") {
         resultadoFinal = parseFloat(valor1) / parseFloat(valor2) / parseFloat(valor3)
     }
     valor1 = ""
