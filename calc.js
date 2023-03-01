@@ -9,6 +9,9 @@ let temValor2 = false
 let resultado = document.querySelector('.final')
 let sinal1 = ""
 let resultadoFinal = ""
+let valor3 = ""
+let sinal2 = ""
+
 //funções
 function insert(event) {
     if (temValor1 == false) {
@@ -24,10 +27,21 @@ function insert(event) {
         resultado.innerHTML = valor2
 
     }
+    if(temValor2 == true){
+        resultado.innerHTML = ""
+        valor3 += event.target.value
+        resultado.innerHTML = valor3
+    }
 }
 function sinal(event) {
-    sinal1 = event.target.value
-    temValor1 = true
+    if (temValor1 == false) {
+        sinal1 = event.target.value
+        temValor1 = true
+    }
+    if (temValor1 == true) {
+        sinal2 = event.target.value
+        temValor2 = true
+    }
 }
 function limpar() {
     resultado.innerHTML = '0'
@@ -40,13 +54,13 @@ function limpar() {
 }
 function igual() {
     if (sinal1 == "+") {
-        resultadoFinal = parseFloat(valor1) + parseFloat(valor2)
+        resultadoFinal = parseFloat(valor1) + parseFloat(valor2) + parseFloat(valor3)
     } if (sinal1 == "-") {
-        resultadoFinal = parseFloat(valor1) - parseFloat(valor2)
+        resultadoFinal = parseFloat(valor1) - parseFloat(valor2) - parseFloat(valor3)
     } if (sinal1 == "*") {
-        resultadoFinal = parseFloat(valor1) * parseFloat(valor2)
+        resultadoFinal = parseFloat(valor1) * parseFloat(valor2) * parseFloat(valor3)
     } if (sinal1 == "/") {
-        resultadoFinal = parseFloat(valor1) / parseFloat(valor2)
+        resultadoFinal = parseFloat(valor1) / parseFloat(valor2) / parseFloat(valor3)
     }
     valor1 = resultadoFinal
     valor2 = ""
@@ -58,7 +72,7 @@ function negativar() {
         resultadoFinal = -valor1
         valor1 = resultadoFinal
         resultado.innerHTML = resultadoFinal
-    } 
+    }
     if (valor1 == "0" || valor1 == "") {
         resultado.innerHTML = "0"
     }
