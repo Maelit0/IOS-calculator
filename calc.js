@@ -11,6 +11,7 @@ let sinal1 = ""
 let resultadoFinal = ""
 let valor3 = ""
 let sinal2 = ""
+let temValor3 = false
 
 //funções
 function insert(event) {
@@ -27,7 +28,7 @@ function insert(event) {
         resultado.innerHTML = valor2
 
     }
-    if(temValor2 == true){
+    if (temValor2 == true) {
         resultado.innerHTML = ""
         valor3 += event.target.value
         resultado.innerHTML = valor3
@@ -50,6 +51,8 @@ function limpar() {
     valor2 = ""
     temValor2 = false
     sinal1 = ""
+    temValor3 = false
+    sinal2 = ""
     clear.innerHTML = 'AC'
 }
 function igual() {
@@ -62,8 +65,9 @@ function igual() {
     } if (sinal1 == "/") {
         resultadoFinal = parseFloat(valor1) / parseFloat(valor2) / parseFloat(valor3)
     }
-    valor1 = resultadoFinal
-    valor2 = ""
+    valor1 = ""
+    valor2 = resultadoFinal
+    valor3 = ""
     resultado.innerHTML = resultadoFinal
 }
 function negativar() {
