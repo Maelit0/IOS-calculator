@@ -51,6 +51,7 @@ function igual() {
     valor1 = resultadoFinal
     valor2 = ""
     resultado.innerHTML = resultadoFinal
+    tamanhonumero()
 }
 function negativar() {
     resultado.innerHTML = ''
@@ -58,7 +59,7 @@ function negativar() {
         resultadoFinal = -valor1
         valor1 = resultadoFinal
         resultado.innerHTML = resultadoFinal
-    } 
+    }
     if (valor1 == "0" || valor1 == "") {
         resultado.innerHTML = "0"
     }
@@ -82,5 +83,12 @@ function porcentar() {
     }
     if (valor1 == "0" || valor1 == "") {
         resultado.innerHTML = "0"
+    }
+}
+function tamanhonumero() {
+    resultadoFinal = String(resultadoFinal)
+    if (resultadoFinal.length >= 8) {
+        resultadoFinal.JSON.parse(resultadoFinal);
+        resultado.innerHTML = resultadoFinal.tofixed(4)
     }
 }
