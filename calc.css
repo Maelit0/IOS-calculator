@@ -76,6 +76,9 @@
 .ferramenta:active {
     background-color: #f0ecec;
 }
+.ferramenta:focus{
+    background-color:  #f0ecec;;
+}
 
 button:active {
     background-color: #d6d6d6ee;
