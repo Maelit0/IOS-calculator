@@ -76,7 +76,7 @@
 .ferramenta:active {
     background-color: #f0ecec;
 }
-.ferramenta:focus{
+.oper:focus{
     background-color:  #f0ecec;;
 }
 
