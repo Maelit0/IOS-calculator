@@ -77,7 +77,8 @@
     background-color: #f0ecec;
 }
 .oper:focus{
-    background-color:  #f0ecec;;
+    background-color:  #f0ecec;
+    color: #FF9500;
 }
 
 button:active {
